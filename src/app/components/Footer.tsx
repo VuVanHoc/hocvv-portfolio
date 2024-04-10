@@ -4,10 +4,10 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="hidden text-white fixed bottom-0 w-full bg-gray-800 h-80 px-[300px] flex justify-between items-center">
+    <footer className="text-white w-full bg-gray-800 py-10 md:px-[100px] px-5 flex justify-between items-center">
       <Logo />
       <div>
-        <ul className="flex">
+        <ul className="md:flex hidden">
           {ROUTERS.map((router) => (
             <li key={router.to} className="px-6 py-3">
               <Link href={router.to}>{router.title}</Link>

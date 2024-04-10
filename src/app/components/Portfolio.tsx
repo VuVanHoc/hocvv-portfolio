@@ -63,13 +63,13 @@ export default function Portfolio() {
       id="portfolio"
       className="flex flex-col items-center justify-center pb-[100px] mt-[100px]"
     >
-      <h1 className="text-5xl font-semibold">Portfolio</h1>
+      <h3 className="md:text-5xl font-semibold">Portfolio</h3>
       <br />
       <p className="text-center">
         There are many variations of passages of Lorem Ipsum available, <br />
         but the majority have suffered alteration.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6 pt-[70px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6 md:pt-[70px] pt-[40px]">
         {portflios.map((portfolio) => (
           <PortfolioCardItem portfolio={portfolio} key={portfolio.id} />
         ))}

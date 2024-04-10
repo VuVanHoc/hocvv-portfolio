@@ -5,12 +5,12 @@ import { RightArrowIcon } from "../icons";
 
 export default function DiscussSuggest() {
   return (
-    <div className="text-center flex flex-col items-center bg-gray-900 text-white py-[100px] px-[300px]">
-      <h1 className="text-5xl font-semibold">
+    <div className="text-center flex flex-col items-center bg-gray-900 text-white md:py-[100px] py-2 md:px-[300px] px-2">
+      <h3 className="md:text-5xl text-xl font-semibold">
         Do you have Project Idea?
         <br />
         {`Let's discuss your project!`}
-      </h1>
+      </h3>
       <br />
       <p>
         There are many variations of passages of Lorem Ipsum available,

@@ -2,9 +2,12 @@ import { AnalyzeIcon, DesignIcon, LaunchIcon, ResearchIcon } from "../icons";
 
 export default function WorkProcess() {
   return (
-    <div className="flex gap-36 items-center" id="process">
+    <div
+      className="flex md:gap-36 gap-10 items-center flex-col md:flex-row"
+      id="process"
+    >
       <div className="flex-1">
-        <h1 className="text-5xl font-semibold">Work Process</h1>
+        <h3 className="md:text-5xl font-semibold">Work Process</h3>
         <br />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
@@ -18,7 +21,7 @@ export default function WorkProcess() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 flex-1 gap-x-8">
-        <div className="shadow-xl bg-white rounded-xl p-8 mb-8">
+        <div className="shadow-xl bg-white rounded-xl p-8 md:mb-8">
           <div className="p-5 rounded-md bg-purple-100 w-fit">
             <ResearchIcon />
           </div>
@@ -29,7 +32,7 @@ export default function WorkProcess() {
             arcu.
           </p>
         </div>
-        <div className="shadow-xl bg-white rounded-xl p-8 mt-8">
+        <div className="shadow-xl bg-white rounded-xl p-8 mt-8 mb-8 md:mb-0">
           <div className="p-5 rounded-md bg-purple-100 w-fit">
             <AnalyzeIcon />
           </div>
@@ -40,7 +43,7 @@ export default function WorkProcess() {
             arcu.
           </p>
         </div>
-        <div className="shadow-xl bg-white rounded-xl p-8 mb-8">
+        <div className="shadow-xl bg-white rounded-xl p-8 md:mb-8">
           <div className="p-5 rounded-md bg-purple-100 w-fit">
             <DesignIcon />
           </div>

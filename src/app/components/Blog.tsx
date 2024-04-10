@@ -60,13 +60,13 @@ export default function Blog() {
   );
   return (
     <div id="blog" className="mt-[100px] pb-[100px] flex flex-col items-center">
-      <h1 className="text-5xl font-semibold text-center">Blog</h1>
+      <h3 className="md:text-5xl font-semibold text-center">Blog</h3>
       <br />
       <p className="text-center">
         There are many variations of passages of Lorem Ipsum available, <br />
         but the majority have suffered alteration.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full mt-[70px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full md:mt-[70px] mt-[40px]">
         {blogs.map((blog, index) => (
           <BlogCardItem blog={blog} key={index} />
         ))}

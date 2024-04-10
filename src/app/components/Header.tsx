@@ -5,6 +5,7 @@ import { ROUTERS } from "../routers";
 import Logo from "./Logo";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import { MenuBarIcon } from "../icons";
 
 export default function Header() {
   useEffect(() => {
@@ -44,14 +45,14 @@ export default function Header() {
 
   return (
     <motion.header
-      className="bg-white 2xl:px-[300px] xl:px-[100px] px-[20px] py-[20px] fixed top-0 left-0 w-full shadow"
+      className="bg-white 2xl:px-[300px] xl:px-[100px] px-[20px] md:py-[20px] py-2 fixed top-0 left-0 w-full shadow"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ stiffness: 200, type: "spring" }}
     >
       <nav className="flex justify-between items-center">
         <Logo />
-        <ul className="flex">
+        <ul className="md:flex hidden">
           {ROUTERS.map((router) => (
             <motion.li
               key={router.to}
@@ -71,6 +72,7 @@ export default function Header() {
             Contact
           </motion.button>
         </ul>
+        <MenuBarIcon width={32} height={32} />
       </nav>
     </motion.header>
   );
