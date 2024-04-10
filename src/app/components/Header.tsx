@@ -29,16 +29,15 @@ export default function Header() {
     const links = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
     links.forEach((link) => {
       link.addEventListener("click", (event) => {
-        const targetId = event?.currentTarget
-          ?.getAttribute?.("href")
-          .substring(1);
-        handleClick(event, targetId);
+        const currentTarget = event?.currentTarget as HTMLAnchorElement;
+        const targetId = currentTarget?.getAttribute?.("href")?.substring(1);
+        handleClick(event, targetId || "");
       });
     });
 
     return () => {
       links.forEach((link) => {
-        link.removeEventListener("click", handleClick);
+        link.removeEventListener("click", handleClick as any);
       });
     };
   }, []);
