@@ -5,7 +5,7 @@ import { RightArrowIcon } from "../icons";
 
 export default function DiscussSuggest() {
   return (
-    <div className="text-center flex flex-col items-center bg-gray-900 text-white md:py-[100px] py-2 md:px-[300px] px-2">
+    <div className="text-center flex flex-col items-center bg-gray-900 text-white xl:py-[100px] py-8 xl:px-[300px] px-2">
       <h3 className="md:text-5xl text-xl font-semibold">
         Do you have Project Idea?
         <br />

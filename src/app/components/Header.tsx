@@ -51,7 +51,7 @@ export default function Header() {
     >
       <nav className="flex justify-between items-center">
         <Logo />
-        <ul className="md:flex hidden">
+        <ul className="xl:flex hidden">
           {ROUTERS.map((router) => (
             <motion.li
               key={router.to}
@@ -71,7 +71,9 @@ export default function Header() {
             Contact
           </motion.button>
         </ul>
-        <MenuBarIcon width={32} height={32} />
+        <div className="xl:hidden">
+          <MenuBarIcon width={32} height={32} />
+        </div>
       </nav>
     </motion.header>
   );

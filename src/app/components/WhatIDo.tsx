@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function WhatIDo() {
   return (
     <div
-      className="flex flex-col md:flex-row md:gap-36 gap-8 item-center pb-[150px] md:mt-[150px]"
+      className="flex flex-col md:flex-row xl:gap-36 gap-8 item-center pb-[150px] xl:mt-[150px]"
       id="services"
     >
       <div className="flex-1 flex flex-col justify-center">

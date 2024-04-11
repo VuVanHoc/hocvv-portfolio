@@ -3,7 +3,7 @@ import { AnalyzeIcon, DesignIcon, LaunchIcon, ResearchIcon } from "../icons";
 export default function WorkProcess() {
   return (
     <div
-      className="flex md:gap-36 gap-10 items-center flex-col md:flex-row"
+      className="flex xl:gap-36 gap-10 items-center flex-col xl:flex-row"
       id="process"
     >
       <div className="flex-1">

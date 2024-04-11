@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="text-white w-full bg-gray-800 py-10 md:px-[100px] px-5 flex justify-between items-center">
       <Logo />
       <div>
-        <ul className="md:flex hidden">
+        <ul className="xl:flex hidden">
           {ROUTERS.map((router) => (
             <li key={router.to} className="px-6 py-3">
               <Link href={router.to}>{router.title}</Link>
