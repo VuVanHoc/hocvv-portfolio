@@ -23,6 +23,7 @@ const config: Config = {
             },
             animation: {
                 "meteor-effect": "meteor 5s linear infinite",
+                scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
             },
             keyframes: {
                 meteor: {
@@ -34,6 +35,11 @@ const config: Config = {
                     "100%": {
                         transform: "rotate(215deg) translateX(-500px)",
                         opacity: "0",
+                    },
+                },
+                scroll: {
+                    to: {
+                        transform: "translate(calc(-50% - 0.5rem))",
                     },
                 },
             },

@@ -1,3 +1,4 @@
+import Techstacks from "@/components/Techstacks";
 import AboutPage from "../components/AboutPage";
 import Contact from "../components/Contact";
 import DiscussSuggest from "../components/DiscussSuggest";
@@ -10,6 +11,7 @@ export default function Home() {
         <main className="2xl:px-[300px] xl:px-[100px] px-[20px] scroll-smooth">
             <AboutPage />
             <WorkProcess />
+            <Techstacks />
             <Portfolio />
             <DiscussSuggest />
             {/* <Blog /> */}
