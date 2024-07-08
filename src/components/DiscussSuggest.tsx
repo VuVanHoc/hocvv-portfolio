@@ -1,22 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { RightArrowIcon } from "../icons";
+import { RightArrowIcon } from "../app/icons";
+import { Meteors } from "./ui/meteors";
 
 export default function DiscussSuggest() {
     return (
-        <div className="text-center flex flex-col items-center bg-gray-900 text-white 2xl:py-[100px] xl:py-[50px] py-8 2xl:px-[300px] xl:px-[100px] px-2">
+        <div className="relative text-center flex flex-col items-center bg-gray-900 text-white 2xl:py-[100px] xl:py-[50px] py-8 2xl:px-[300px] xl:px-[100px] px-2 overflow-hidden">
+            <Meteors />
             <h3 className="md:text-5xl text-xl font-semibold">
                 Do you have Project Idea?
-                <br />
-                {`Let's discuss your project!`}
             </h3>
             <br />
-            <p>
-                There are many variations of passages of Lorem Ipsum available,
-                <br />
-                but the majority have suffered alteration.
-            </p>
+            <p>Send me a message, and we can discuss more about your idea.</p>
+            <p>{`Let's transform your ideas into real products together!`}</p>
             <motion.button
                 className="bg-blue-500 text-white px-6 py-3 rounded hover:opacity-80 mt-12 flex items-center"
                 whileHover={{ scale: 1.1 }}

@@ -1,4 +1,9 @@
-import { AnalyzeIcon, DesignIcon, LaunchIcon, ResearchIcon } from "../icons";
+import {
+    AnalyzeIcon,
+    DesignIcon,
+    LaunchIcon,
+    ResearchIcon,
+} from "../app/icons";
 
 export default function WorkProcess() {
     return (
@@ -30,7 +35,7 @@ export default function WorkProcess() {
                 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 flex-[2] gap-x-8">
-                <div className="shadow-xl bg-white rounded-xl p-8 md:mb-8">
+                <div className="shadow-xl bg-white rounded-xl p-8 md:mb-8 cursor-pointer hover:scale-105 transition-all duration-300">
                     <div className="p-5 rounded-md bg-blue-100 w-fit">
                         <ResearchIcon />
                     </div>
@@ -44,7 +49,7 @@ export default function WorkProcess() {
                         planning.
                     </p>
                 </div>
-                <div className="shadow-xl bg-white rounded-xl p-8 mt-8 mb-8 md:mb-0">
+                <div className="shadow-xl bg-white rounded-xl p-8 mt-8 mb-8 md:mb-0 cursor-pointer hover:scale-105 transition-all duration-300">
                     <div className="p-5 rounded-md bg-blue-100 w-fit">
                         <AnalyzeIcon />
                     </div>
@@ -58,7 +63,7 @@ export default function WorkProcess() {
                         user-friendly site.
                     </p>
                 </div>
-                <div className="shadow-xl bg-white rounded-xl p-8 md:mb-8">
+                <div className="shadow-xl bg-white rounded-xl p-8 md:mb-8 cursor-pointer hover:scale-105 transition-all duration-300">
                     <div className="p-5 rounded-md bg-blue-100 w-fit">
                         <DesignIcon />
                     </div>
@@ -70,7 +75,7 @@ export default function WorkProcess() {
                         user experience.
                     </p>
                 </div>
-                <div className="shadow-xl bg-white rounded-xl p-8 mt-8">
+                <div className="shadow-xl bg-white rounded-xl p-8 mt-8 cursor-pointer hover:scale-105 transition-all duration-300">
                     <div className="p-5 rounded-md bg-blue-100 w-fit">
                         <LaunchIcon />
                     </div>

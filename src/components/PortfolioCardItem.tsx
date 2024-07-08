@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { RightArrowIcon } from "../icons";
+import { RightArrowIcon } from "../app/icons";
 import { motion } from "framer-motion";
 
 export interface IPortfolio {

@@ -1,13 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { ROUTERS } from "../routers";
+import { ROUTERS } from "../app/routers";
 import Logo from "./Logo";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { MenuBarIcon } from "../icons";
+import { MenuBarIcon } from "../app/icons";
 
 export default function Header() {
+    const onClickContactMe = () => {
+        const target = document.getElementById("contact");
+
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop - 150,
+                behavior: "smooth",
+            });
+        }
+    };
     useEffect(() => {
         const smoothScroll = (targetId: string) => {
             const target = document.getElementById(targetId);
@@ -67,6 +77,7 @@ export default function Header() {
                     ))}
 
                     <motion.button
+                        onClick={onClickContactMe}
                         className="bg-blue-500 text-white px-6 py-3 rounded hover:opacity-80"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}

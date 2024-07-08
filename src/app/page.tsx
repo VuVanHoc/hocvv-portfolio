@@ -1,9 +1,9 @@
-import AboutPage from "./components/AboutPage";
-import Blog from "./components/Blog";
-import DiscussSuggest from "./components/DiscussSuggest";
-import Portfolio from "./components/Portfolio";
-import WhatIDo from "./components/WhatIDo";
-import WorkProcess from "./components/WorkProcess";
+import AboutPage from "../components/AboutPage";
+import Contact from "../components/Contact";
+import DiscussSuggest from "../components/DiscussSuggest";
+import Portfolio from "../components/Portfolio";
+import WhatIDo from "../components/WhatIDo";
+import WorkProcess from "../components/WorkProcess";
 
 export default function Home() {
     return (
@@ -14,6 +14,7 @@ export default function Home() {
             <DiscussSuggest />
             {/* <Blog /> */}
             <WhatIDo />
+            <Contact />
         </main>
     );
 }
