@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function WhatIDo() {
     return (
         <div
-            className="flex flex-col md:flex-row xl:gap-36 gap-8 item-center pb-[150px] 2xl:mt-[150px] xl:mt-[80px]"
+            className="flex flex-col md:flex-row xl:gap-36 gap-8 item-center 2xl:mt-[150px] xl:mt-[80px] mt-[100px]"
             id="services"
         >
             <div className="flex-1 flex flex-col justify-center">
@@ -14,15 +14,32 @@ export default function WhatIDo() {
                 </h3>
                 <br />
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla purus arcu, varius eget velit non, laoreet imperdiet
-                    orci. Mauris ultrices eget lorem ac vestibulum. Suspendis
-                    imperdiet,
+                    <span className="font-bold text-blue-600 bg-blue-100">
+                        Research solutions
+                    </span>{" "}
+                    from your requirements.{" "}
+                    <span className="font-bold text-blue-600 bg-blue-100">
+                        Analyze, design, and develop
+                    </span>{" "}
+                    the product{" "}
+                    <span className="font-bold text-blue-600 bg-blue-100">
+                        as quickly as possible
+                    </span>{" "}
+                    so you can experience it and make necessary adjustments.
                 </p>
                 <br />
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla purus arcu, varius eget velit non.
+                    <span className="font-bold text-blue-600 bg-blue-100">
+                        The results of the product
+                    </span>{" "}
+                    will{" "}
+                    <span className="font-bold text-blue-600 bg-blue-100">
+                        satisfy you
+                    </span>
+                    , and{" "}
+                    <span className="font-bold text-blue-600 bg-blue-100">
+                        that brings me happiness.
+                    </span>
                 </p>
                 <br />
                 <motion.button
@@ -36,24 +53,24 @@ export default function WhatIDo() {
             <div className="flex-1 flex flex-col gap-6">
                 <div className="border-l-4 hover:border-blue-500 shadow rounded p-8 bg-white">
                     <h2 className="text-2xl font-semibold text-gray-900 ">
-                        User Experience (UX)
+                        Research & Analyze
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nulla purus arcu, varius eget velit non, laoreet
-                        imperdiet orci. Mauris ultrices eget lorem ac
-                        vestibulum.
+                        Find solutions and technologies that meet your
+                        requirements. Ensure that no requirements are
+                        overlooked, giving you a comprehensive view of the
+                        product you desire.
                     </p>
                 </div>
                 <div className="border-l-4 hover:border-blue-500 shadow rounded p-8 bg-white">
                     <h2 className="text-2xl font-semibold text-gray-900 ">
-                        User Interface (UI)
+                        Design User Interface (UI/UX)
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nulla purus arcu, varius eget velit non, laoreet
-                        imperdiet orci. Mauris ultrices eget lorem ac
-                        vestibulum.
+                        Sketch your ideas into a mockup (Figma), helping you
+                        easily visualize your product. Then, make necessary
+                        adjustments and changes before starting to build the
+                        system.
                     </p>
                 </div>
                 <div className="border-l-4 hover:border-blue-500 shadow rounded p-8 bg-white">
@@ -61,10 +78,11 @@ export default function WhatIDo() {
                         Web/Mobile Development
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nulla purus arcu, varius eget velit non, laoreet
-                        imperdiet orci. Mauris ultrices eget lorem ac
-                        vestibulum.
+                        Develop the product on Web/Mobile platforms based on
+                        your requirements. I am committed to building systems
+                        that ensure high performance, user-friendly interfaces,
+                        and are up-to-date with trends and technology, providing
+                        the best user experience.
                     </p>
                 </div>
             </div>

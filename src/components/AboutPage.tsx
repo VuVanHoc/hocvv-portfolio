@@ -149,7 +149,7 @@ export default function AboutPage() {
                     <div className="flex gap-4 flex-col md:flex-row">
                         <button
                             onClick={gotoMyPortfolio}
-                            className="bg-blue-500 text-white xl:px-6 xl:py-3 px-2 rounded border border-blue-500 font-bold"
+                            className="bg-blue-500 text-white px-6 py-3 rounded border border-blue-500 font-bold"
                         >
                             My Projects
                         </button>
@@ -160,7 +160,7 @@ export default function AboutPage() {
                             }
                             target="_blank"
                         >
-                            <button className="text-blue-500 border border-blue-500 px-6 py-3 rounded font-bold flex justify-center">
+                            <button className="text-blue-500 border border-blue-500 px-6 py-3 rounded font-bold flex justify-center w-full">
                                 <DownloadIcon
                                     width={24}
                                     height={24}

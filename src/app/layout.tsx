@@ -9,6 +9,9 @@ const poppins = Work_Sans({ subsets: ["latin"], weight: "400" });
 export const metadata: Metadata = {
     title: "Portfolio - Hoc Vu",
     description: "Hello from Hoc Vu - Portfolio about myself",
+    icons: {
+        icon: "😁😎",
+    },
 };
 
 export default function RootLayout({

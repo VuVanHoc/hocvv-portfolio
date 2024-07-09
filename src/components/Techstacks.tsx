@@ -10,7 +10,7 @@ import github from "/public/techstacks/github.png";
 import gitlab from "/public/techstacks/gitlab.png";
 import html5 from "/public/techstacks/html5.png";
 import jira from "/public/techstacks/jira.png";
-import jsicon from "/public/techstacks/jsicon.webp";
+import jsicon from "/public/techstacks/jsicon.png";
 import mongodb from "/public/techstacks/mongodb.png";
 import mysql from "/public/techstacks/mysql.png";
 import nestjs from "/public/techstacks/nestjs.png";
@@ -18,37 +18,28 @@ import nodejs from "/public/techstacks/nodejs.webp";
 import nextjs from "/public/techstacks/nextjs.png";
 import postgresql from "/public/techstacks/postgresql.png";
 import react from "/public/techstacks/react.png";
-import sass from "/public/techstacks/sass.png";
-import tailwind from "/public/techstacks/tailwind.webp";
+import tailwind from "/public/techstacks/tailwind.png";
 import trello from "/public/techstacks/trello.png";
-import tsicon from "/public/techstacks/tsicon.png";
+import tsicon from "/public/techstacks/tsicon.webp";
 
 import { InfiniteMoving } from "./ui/InfiniteMoving";
 
 const TECHSTACKS = [
     {
-        name: "AWS",
-        image: aws,
-    },
-    {
-        name: "Bitbucket",
-        image: bitbucket,
-    },
-    {
-        name: "CouchDB",
-        image: couchdb,
+        name: "HTML5",
+        image: html5,
     },
     {
         name: "CSS",
         image: css,
     },
     {
-        name: "Express",
-        image: express,
+        name: "JS",
+        image: jsicon,
     },
     {
-        name: "Figma",
-        image: figma,
+        name: "tsicon",
+        image: tsicon,
     },
     {
         name: "Git",
@@ -62,18 +53,31 @@ const TECHSTACKS = [
         name: "GitLab",
         image: gitlab,
     },
+
     {
-        name: "HTML5",
-        image: html5,
+        name: "Bitbucket",
+        image: bitbucket,
+    },
+    {
+        name: "react",
+        image: react,
+    },
+    {
+        name: "nextjs",
+        image: nextjs,
+    },
+    {
+        name: "tailwind",
+        image: tailwind,
     },
 
     {
-        name: "jira",
-        image: jira,
+        name: "AWS",
+        image: aws,
     },
     {
-        name: "JS",
-        image: jsicon,
+        name: "CouchDB",
+        image: couchdb,
     },
     {
         name: "Mongodb",
@@ -84,6 +88,10 @@ const TECHSTACKS = [
         image: mysql,
     },
     {
+        name: "postgresql",
+        image: postgresql,
+    },
+    {
         name: "Nestjs",
         image: nestjs,
     },
@@ -92,46 +100,37 @@ const TECHSTACKS = [
         image: nodejs,
     },
     {
-        name: "nextjs",
-        image: nextjs,
+        name: "Express",
+        image: express,
     },
     {
-        name: "postgresql",
-        image: postgresql,
-    },
-    {
-        name: "react",
-        image: react,
-    },
-    {
-        name: "sass",
-        image: sass,
-    },
-    {
-        name: "tailwind",
-        image: tailwind,
+        name: "Figma",
+        image: figma,
     },
     {
         name: "trello",
         image: trello,
     },
     {
-        name: "tsicon",
-        image: tsicon,
+        name: "jira",
+        image: jira,
     },
 ];
 export default function Techstacks() {
     return (
-        <div className="pb-[100px] mt-[100px] text-center">
+        <div className="mt-[100px] text-center">
             <h3 className="md:text-5xl font-semibold text-center ">
                 My Techstacks
             </h3>
+            <br />
             <p>Always looking for new technologies</p>
+            <p>Just give me a keyword, I will try to help you!</p>
+            <br />
             <InfiniteMoving direction="left" speed="slow">
                 {TECHSTACKS.slice(0, 12).map((techstack) => (
                     <div
                         key={techstack.name}
-                        className="flex-shrink-0 flex items-center justify-center mx-8"
+                        className="flex-shrink-0 flex items-center justify-center mx-4"
                     >
                         <Image
                             className="w-[120px] aspect-auto "
@@ -145,7 +144,7 @@ export default function Techstacks() {
                 {TECHSTACKS.slice(12).map((techstack) => (
                     <div
                         key={techstack.name}
-                        className="flex-shrink-0 flex items-center justify-center mx-8"
+                        className="flex-shrink-0 flex items-center justify-center mx-4"
                     >
                         <Image
                             className="w-[120px] aspect-auto "
